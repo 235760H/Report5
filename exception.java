@@ -1,11 +1,11 @@
 public class exception {
     public static void main(String[] args){
         try{
-        String str = null;
-        System.out.println(str.length());
-        } catch (NullPointerException str){
-        System.out.println("NullPointerExceptionが発生しました。");
-        System.out.println(str.getMessage());
-        }        
+        String str = "壱百満";
+        int s = Integer.parseInt(str);
+        System.out.println(s);
+        } catch (NumberFormatException str){
+        System.out.println("NumberFormatExceptionが発生しました。");
+        }
     }
 }
